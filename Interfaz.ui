@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Ensamblador</class>
+ <widget class="QMainWindow" name="Ensamblador">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1163</width>
+    <height>655</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ensamblador</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lblProductos">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bodoni MT</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Productos:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboProductos">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>50</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>80</y>
+      <width>781</width>
+      <height>421</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>530</y>
+      <width>551</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>150</y>
+      <width>256</width>
+      <height>341</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTabla">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>20</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bookman Old Style</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Tabla de Simulación</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblComponentes">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>100</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bookman Old Style</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Componentes a utilizar</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>530</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTiempoEnsamble">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>540</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bookman Old Style</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Tiempo óptimo de ensamblaje: </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="segundos">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>560</y>
+      <width>21</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bookman Old Style</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>S</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1163</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOpciones">
+    <property name="title">
+     <string>Opciones</string>
+    </property>
+    <addaction name="actionActualizar"/>
+    <addaction name="actionLimpiar"/>
+   </widget>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionCargar_Maquina"/>
+    <addaction name="actionCargar_Simulacion"/>
+    <addaction name="actionSalida_Simulacion"/>
+    <addaction name="actionReporte_Simulacion_HTML"/>
+    <addaction name="actionReporte_de_secuencia"/>
+   </widget>
+   <widget class="QMenu" name="menuSalir">
+    <property name="title">
+     <string>Salir</string>
+    </property>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuOpciones"/>
+   <addaction name="menuSalir"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionActualizar">
+   <property name="text">
+    <string>Actualizar</string>
+   </property>
+  </action>
+  <action name="actionLimpiar">
+   <property name="text">
+    <string>Limpiar Interfaz</string>
+   </property>
+  </action>
+  <action name="actionCargar_Maquina">
+   <property name="text">
+    <string>Cargar Maquina</string>
+   </property>
+  </action>
+  <action name="actionCargar_Simulacion">
+   <property name="text">
+    <string>Cargar Simulacion</string>
+   </property>
+  </action>
+  <action name="actionSalida_Simulacion">
+   <property name="text">
+    <string>Salida Simulacion</string>
+   </property>
+  </action>
+  <action name="actionReporte_Simulacion_HTML">
+   <property name="text">
+    <string>Reporte Simulacion HTML</string>
+   </property>
+  </action>
+  <action name="actionReporte_de_secuencia">
+   <property name="text">
+    <string>Reporte de secuencia</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
