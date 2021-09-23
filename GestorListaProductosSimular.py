@@ -1,6 +1,9 @@
+
 from ListaSimpleProductos import *
+
+
 class GestorListaProductosSimular:
-        contador=0
+        global contadoraddCombo  
         def __init__(self):
                 self.cabeza=None        
                 
@@ -14,7 +17,6 @@ class GestorListaProductosSimular:
                                 auxiliar= auxiliar.siguiente
                         auxiliar.siguiente = nuevo
 
-        def AgregarCombo(self):
-                auxiliar = self.cabeza
+        
                          
                 

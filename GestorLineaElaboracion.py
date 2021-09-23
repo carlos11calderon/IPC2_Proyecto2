@@ -1,10 +1,11 @@
-from NodoGeneralSimulacion import *
-class GestorSimulacion:
-    def __init__(self):
-        self.cabeza = None
+from NodoLineaElaboracion import *
+class GestorLineaElaboracion:
 
-    def InsertarSimulacion(self, Nombre, Listaproducto):
-        nuevo = NodoGeneralSimulacion(Nombre, Listaproducto, None)
+    def __init__(self):
+        self.cabeza= None
+
+    def InsertarLineaElaboracion(self, Linea):
+        nuevo = NodoLineaElaboracion(Linea, None)
         if self.cabeza is None: 
             self.cabeza = nuevo
         else: 

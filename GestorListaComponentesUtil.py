@@ -1,10 +1,12 @@
-from NodoGeneralSimulacion import *
-class GestorSimulacion:
-    def __init__(self):
-        self.cabeza = None
+from ListaComponentesUtil import ListaComponentesUtil
 
-    def InsertarSimulacion(self, Nombre, Listaproducto):
-        nuevo = NodoGeneralSimulacion(Nombre, Listaproducto, None)
+
+class GestorListaComponentesUtil:
+    def __init__(self):
+        self.cabeza= None
+
+    def InsertarComponenteUtil(self, Componente):
+        nuevo = ListaComponentesUtil(Componente, None)
         if self.cabeza is None: 
             self.cabeza = nuevo
         else: 
