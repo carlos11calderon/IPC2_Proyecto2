@@ -228,57 +228,90 @@ class Ui_Ensamblador(object):
                 Ensamblado = gestor.Ensamblado(producto,i)
                 if(Ensamblado == False):
                     Linea = gestor.RetornarLinea(producto,i)
+                    #ComponenteActual = gestor.ObtenerComponenteActual(producto,i)
                     ComponenteAEnsamblar = gestor.RetornarComponente(producto,i)
                     posicion = i
                     break
                 
             rowPosition = self.tableLineas.rowCount()
             self.tableLineas.insertRow(rowPosition)
-                
-            if(gestor.Ensambla(producto,ComponenteActual,posicion,Linea)==False and gestor.SeMueve(producto,ComponenteActual,Linea)==True ):    
-                self.tableLineas.setItem(rowPosition,Linea,QtWidgets.QTableWidgetItem("Mueve a comp "+str(ComponenteActual+1)))
-                print("se mueve")
-                if ComponenteActual < ComponenteMasGrande:
-                    ComponenteActual+=1
-            elif(gestor.Ensambla(producto,ComponenteActual,posicion,Linea)==True and gestor.SeMueve(producto,ComponenteActual,Linea)==False):
-                if(gestor.PuedeEnsamblar(producto,posicion, Linea)==False):
-                    self.tableLineas.setItem(rowPosition,Linea,QtWidgets.QTableWidgetItem("No hace Nada "))
-                    print("No hace nada")
-                else:
-                    self.tableLineas.setItem(rowPosition,Linea,QtWidgets.QTableWidgetItem("Ensamblando componente "+str(ComponenteActual)))
-                    print("ensamblando")
-                    if ComponenteActual < ComponenteMasGrande:
+            if ComponenteAEnsamblar >=  ComponenteActual:
+                ensambla = gestor.Ensambla(producto,ComponenteActual,posicion,Linea) 
+                mueve =  gestor.SeMueveIndi(producto,ComponenteActual,Linea)
+                if(ensambla==False and mueve==True ):    
+                    self.tableLineas.setItem(rowPosition,Linea,QtWidgets.QTableWidgetItem("Mueve a comp "+str(ComponenteActual+1)))
+                    print("Linea "+str(Linea)+" se mueve a "+str(ComponenteActual+1))
+                    if ComponenteActual < ComponenteAEnsamblar:
                         ComponenteActual+=1
-                    contadorEnsamblados+=1
-                    gestor.CambiarEstadoEnsamblado(producto,posicion,Linea)
-                    LineaEnsamblando = True
+                
+                elif(ensambla==True and mueve==False):
+                    if(gestor.PuedeEnsamblar(producto,posicion, Linea)==False):
+                        self.tableLineas.setItem(rowPosition,Linea,QtWidgets.QTableWidgetItem("No hace Nada "))
+                        print("Linea "+str(Linea)+" No hace nada ")
+                    else:
+                        self.tableLineas.setItem(rowPosition,Linea,QtWidgets.QTableWidgetItem("Ensamblando componente "+str(ComponenteActual)))
+                        print("ensamblando la Linea " + str(Linea))
+                        if ComponenteActual < ComponenteAEnsamblar:
+                            ComponenteActual+=1
+                        contadorEnsamblados+=1
+                        gestor.CambiarEstadoEnsamblado(producto,posicion,Linea)
+                        LineaEnsamblando = True
+            else:
+                ensambla = gestor.Ensambla(producto,ComponenteActual,posicion,Linea) 
+                mueve =  gestor.SeMueveIndi(producto,ComponenteActual,Linea)
+                if(ensambla==False and mueve==True ):    
+                    self.tableLineas.setItem(rowPosition,Linea,QtWidgets.QTableWidgetItem("Mueve a comp "+str(ComponenteActual+1)))
+                    print("Linea "+str(Linea)+" se mueve a "+str(ComponenteActual-1))
+                    if ComponenteActual > ComponenteAEnsamblar:
+                        ComponenteActual-=1
+                elif(gestor.Ensambla(producto,ComponenteActual,posicion,Linea)==True and gestor.SeMueve(producto,ComponenteActual,Linea)==False):
+                    if(gestor.PuedeEnsamblar(producto,posicion, Linea)==False):
+                        self.tableLineas.setItem(rowPosition,Linea,QtWidgets.QTableWidgetItem("No hace Nada "))
+                        print("Linea "+str(Linea)+" No hace nada")
+                    else:
+                        self.tableLineas.setItem(rowPosition,Linea,QtWidgets.QTableWidgetItem("Ensamblando componente "+str(ComponenteActual)))
+                        print("ensamblando la Linea " + str(Linea))
+                        if ComponenteActual > ComponenteAEnsamblar:
+                            ComponenteActual-=1
+                        contadorEnsamblados+=1
+                        gestor.CambiarEstadoEnsamblado(producto,posicion,Linea)
+                        LineaEnsamblando = True
 
             for i in range(1, Linea):
-                if LineaEnsamblando!=True:
-                    if( gestor.EnsamblaExtra(producto,ComponenteActual,i)==False and gestor.SeMueve(producto,ComponenteActual,i)==True):    
-                        self.tableLineas.setItem(rowPosition,i,QtWidgets.QTableWidgetItem("Mueve a comp "+str(ComponenteActual)))
-                        print("se mueve")
-                    elif(gestor.SeMueve(producto,ComponenteActual,i)==False and gestor.EnsamblaExtra(producto,ComponenteActual,i)==True):
-                        if(gestor.PuedeEnsamblarExtra(producto,Linea)==False):
-                            self.tableLineas.setItem(rowPosition,i,QtWidgets.QTableWidgetItem("No hace Nada "))
-                            print("No hace nada")
+                if gestor.ExisteLinea(producto,i)==True:
+                    ensambla = gestor.EnsamblaExtra(producto,ComponenteActual,i) 
+                    mueve =  gestor.SeMueve(producto,ComponenteActual,i)
+                    if LineaEnsamblando!=True:
+                        if( ensambla==False and mueve==True):    
+                            self.tableLineas.setItem(rowPosition,i,QtWidgets.QTableWidgetItem("Mueve a comp "+str(ComponenteActual)))
+                            print("Linea "+str(i)+" se mueve a "+str(ComponenteActual))
+                        elif(mueve==False and ensambla==True):
+                            if(gestor.PuedeEnsamblarExtra(producto,i)==False):
+                                self.tableLineas.setItem(rowPosition,i,QtWidgets.QTableWidgetItem("No hace Nada "))
+                                print("Linea "+str(i)+" No hace nada")
+                    else:
+                        self.tableLineas.setItem(rowPosition,i,QtWidgets.QTableWidgetItem("No hace Nada "))
+                        print("Linea "+str(i)+" No hace nada")
                 else:
-                    self.tableLineas.setItem(rowPosition,i,QtWidgets.QTableWidgetItem("No hace Nada "))
-                
+                    pass    
             
-            for j in range(Linea+1, tamaCol):
-                if LineaEnsamblando!=True:
-                    if( gestor.EnsamblaExtra(producto,ComponenteActual,j)==False and gestor.SeMueve(producto,ComponenteActual,j)==True):    
-                        self.tableLineas.setItem(rowPosition,i,QtWidgets.QTableWidgetItem("Mueve a comp "+str(ComponenteActual)))
-                        print("se mueve")
-                    elif(gestor.SeMueve(producto,ComponenteActual,j)==False and gestor.EnsamblaExtra(producto,ComponenteActual,j)==True):
-                        if(gestor.PuedeEnsamblarExtra(producto,j)==False):
-                            self.tableLineas.setItem(rowPosition,j,QtWidgets.QTableWidgetItem("No hace Nada "))
-                            print("No hace nada")
-                else: 
-                    self.tableLineas.setItem(rowPosition,j,QtWidgets.QTableWidgetItem("No hace Nada "))
-                
-            
+            for j in range(Linea+1, cantidadListaLineas):
+                if gestor.ExisteLinea(producto,j)==True:
+                    ensambla = gestor.EnsamblaExtra(producto,ComponenteActual,j) 
+                    mueve =  gestor.SeMueve(producto,ComponenteActual,j)
+                    if LineaEnsamblando!=True:
+                        if(ensambla==False and mueve==True):    
+                            self.tableLineas.setItem(rowPosition,i,QtWidgets.QTableWidgetItem("Mueve a comp "+str(ComponenteActual)))
+                            print("Linea "+str(j)+" se mueve a "+str(ComponenteActual))
+                        elif(mueve==False and ensambla==True):
+                            if(gestor.PuedeEnsamblarExtra(producto,j)==False):
+                                self.tableLineas.setItem(rowPosition,j,QtWidgets.QTableWidgetItem("No hace Nada "))
+                                print("Linea "+str(j)+" No hace nada")
+                    else: 
+                        self.tableLineas.setItem(rowPosition,j,QtWidgets.QTableWidgetItem("No hace Nada "))
+                        print("Linea "+str(j)+" No hace nada")
+                else:
+                    pass
             ''''for columnas in range(1,tamaCol):
                 
                 TiempoEnsamble = gestor.ObtenerTiempoEnsambleLinea(columnas)
