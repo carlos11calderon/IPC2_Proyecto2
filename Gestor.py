@@ -178,7 +178,7 @@ class Gestor:
             valorCompo = auxiliar2.componente
             ListaSimular.InsertarEnSimularIndividual(valorline,valorCompo)
         self.ListaPadre.InsertarSimulacion(Producto, ListaSimular.Cabeza)
-        ListaSimular.Cabeza = None
+        ListaSimular.ColaImportancia(Producto)
         
         
 

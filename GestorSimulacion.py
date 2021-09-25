@@ -12,3 +12,5 @@ class GestorSimulacion:
             while auxiliar.siguiente is not None:
                 auxiliar= auxiliar.siguiente
             auxiliar.siguiente = nuevo
+
+    

@@ -23,6 +23,7 @@ gestor = Gestor()
 gestor2 = GestorListaProductos()
 ges = GestorListaSimulacion()
 
+global headerTableHtml
 contadorActualizar = 0 
 class Ui_Ensamblador(object):
     def setupUi(self, Ensamblador):
@@ -62,6 +63,11 @@ class Ui_Ensamblador(object):
         self.btnSimular.setGeometry(QtCore.QRect(400,20,121,51))
         self.btnSimular.setObjectName("Simular")
         self.btnSimular.clicked.connect(self.Simular2)
+
+        self.btnReporteHTML = QtWidgets.QPushButton(self.centralwidget)
+        self.btnReporteHTML.setGeometry(QtCore.QRect(1000,20,121,51))
+        self.btnReporteHTML.setObjectName("ReporteHtml")
+        self.btnReporteHTML.clicked.connect(self.ReporteIndividual)
         font = QtGui.QFont()
         font.setFamily("Bookman Old Style")
         font.setPointSize(14)
@@ -164,7 +170,7 @@ class Ui_Ensamblador(object):
         self.actionReporte_Simulacion_HTML.setText(_translate("Ensamblador", "Reporte Simulacion HTML"))
         self.actionReporte_de_secuencia.setText(_translate("Ensamblador", "Reporte de secuencia"))
         self.btnSimular.setText(_translate("Ensamblador", "Simular"))
-
+        self.btnReporteHTML.setText(_translate("Ensamblador", "Reporte Html"))
 
     def Actualizar(self):
         global contadorActualizar
@@ -196,16 +202,18 @@ class Ui_Ensamblador(object):
     
     
     def addTablaLineas(self):
+        global headerTableHtml
         self.tableLineas.setColumnCount(gestor.cabeza.CantidadLineas+1)
         texto = self.comboProductos.currentText()
         if texto !=None:
             print("si da rango: "+ str(gestor.cantidadListaLineas(texto)))
             self.tableLineas.setHorizontalHeaderItem(0,QtWidgets.QTableWidgetItem('Tiempo'))
             print("al menos inserta fila    ")
+            headerTableHtml = '<th scope="col">Tiempo</th>\n'
+                            
             for i in range(0, 1):
                 for j in range(1, self.tableLineas.columnCount()):
                     valor = 'L'+str(j)
-                    
                     self.tableLineas.setHorizontalHeaderItem(j,QtWidgets.QTableWidgetItem(valor))
                 print("paso")
                    
@@ -214,11 +222,14 @@ class Ui_Ensamblador(object):
     def Simular2(self):
         
         producto = self.comboProductos.currentText()
+        
+        
         gestor.SimularProducto(producto)
         cantidadListaLineas = gestor.cantidadListaLineas(producto)
         contadorFila = 0
         TerminoSimulacion=False
         ContadorTiempo = 0
+        #ruta = 'IPC2_Proyecto2_201905515\Salidas Simulacion Individual'
         self.progressBar.setProperty("value", 50)
         time.sleep(2)
         while  TerminoSimulacion ==False:
@@ -226,6 +237,7 @@ class Ui_Ensamblador(object):
             
             for posicion in range(cantidadListaLineas):
                 if contadorFila == 0:
+                    
                     ContadorTiempo+=1
                     rowPosition = self.tableLineas.rowCount()
                     self.tableLineas.insertRow(rowPosition)
@@ -276,6 +288,7 @@ class Ui_Ensamblador(object):
                             NodoAnteriorEnsamblado = gestor.PuedeEnsamblar(producto,posicion)
                             if NodoAnteriorEnsamblado ==True:
                                 TiempoEnsamble = gestor.ObtenerTiempoEnsambleLinea(Linea)
+                                
                                 print("Ensamblando componente "+str(ComponenteActual)+" en Linea "+str(Linea)+" DUURACION: "+str(TiempoEnsamble))
                                 contadorFila=1 
                                 ContadorTiempo+=TiempoEnsamble-1
@@ -302,10 +315,70 @@ class Ui_Ensamblador(object):
                         print("Linea "+str(Linea2)+" No hace nada")
                         self.tableLineas.setItem(rowPosition,Linea2,QtWidgets.QTableWidgetItem("No hace nada"))
                         gestor.LineaOcupadaTrue(producto,Linea2)
+            
+            
             contadorFila=0
+
         print("Ensamblo el ultimo perro")
+        
         self.progressBar.setProperty("value", 100)
         #for i in range(cantidadListaLineas):
         self.tableLineas.resizeColumnsToContents()
         self.lcdNumber.display(str(ContadorTiempo))
         
+    def ReporteIndividual(self):
+        producto = self.comboProductos.currentText()
+        tiempoOptimo    =    int(self.lcdNumber.value())
+        headerTableHtml='<th scope="col"> Tiempo en segundos</th>\n'
+        for j in range(1,self.tableLineas.columnCount()):
+            headerTableHtml+= '<th scope="col"> Linea '+str(j)+'</th>\n'
+        contenidoTabla =''
+        for i in range(self.tableLineas.rowCount()):
+            tiempo = self.tableLineas.item(i,0)
+            tiempo = tiempo.text()
+            contenidoTabla+='<tr><th scope="row">'+tiempo+'</th>\n'
+            for j in range(1,self.tableLineas.columnCount()):
+                valor = self.tableLineas.item(i,j)
+                if valor is None:
+                    valor = ""
+                else:
+                    valor = valor.text()
+                contenidoTabla += '<td>'+valor+'</td>\n' 
+            contenidoTabla+='</tr>\n'
+
+        contenidoHTML=(## cuerpo del html
+                '<!DOCTYPE html>\n'
+                ' <html>\n' 
+                '<head> \n'
+                '<meta charset="utf-8"> \n'
+                '<link href="assets/css/bootstrap-responsive.css" type="text/css" rel="stylesheet">\n'
+                '<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" rel="stylesheet">\n'
+                '<link rel="stylesheet" type="text/css" href="./CSS/bootstrap.css">\n'
+                '<link rel="stylesheet" type="text/css"  href="./CSS/Style.css">'
+                '<title>Reporte de '+producto+'</title>\n'
+                '</head>\n' 
+                '<body>\n'
+                '<div class="container-fluid welcome-page" id="home">\n'
+                '   <div class="jumbotron">\n'
+                '       <h1>\n <span>Tabla de Ensamble de'+producto+'\n</span>\n </h1>\n<p>Tiempo Optimo del Ensamble de '+producto+': '+str(tiempoOptimo)+'</p>\n'
+                '</div>\n'
+                '</div>\n'
+                '<div class="container-fluid " ><div class="jumbotron">'
+                '<table class="table">\n'
+                '   <thead>\n'
+                        '<tr>\n'
+                            +headerTableHtml+
+                        '</tr>\n'
+
+                    '</thead>\n'
+                    '<tbody>\n'
+                    +contenidoTabla+
+                    '</tbody>\n'
+                    '</table>'   
+                    '</div>'
+                '</div>\n''</body>\n''</html>\n'
+            )
+            
+        fileHtml = open("./HTML/Individual/"+producto+".html","w")##Abre html
+        fileHtml.write(contenidoHTML)
+        fileHtml.close()    

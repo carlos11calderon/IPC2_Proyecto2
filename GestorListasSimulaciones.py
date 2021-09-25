@@ -1,6 +1,6 @@
 
 from ListaSimulacionIndividual import *
-
+import os
 
 class GestorListaSimulacion:
     
@@ -19,29 +19,37 @@ class GestorListaSimulacion:
             nuevo.Anterior= aux
 
     
-    
-    
-    
-    def SeMueve(self,i):
-        if i < self.Cabeza.Componente:
-            valorMovimiento=self.Cabeza.SeMueve
-            return valorMovimiento
-        else:
-            valorMovimiento = self.Cabeza.SeMueve
-            self.Cabeza.SeMueve=False
-            self.Cabeza.Ensambla=True
-            return valorMovimiento
-
-    
-    def Ensambla(self,j,i):
+    def ColaImportancia(self,producto):
+        contAr=0
         aux = self.Cabeza
-        while aux.siguiente is not None:
-            if j == aux.Linea:
-                if aux.Componente == i+1:
-                    aux.Ensambla = True 
-            else:
-                aux = aux.siguiente
-            
+        producto = producto.replace(" ","_")
+        f = open('ArchivosDots/archivo'+producto+'.dot', 'w', encoding='utf-8')
+        node_data = ''
+        edge_data = ''
+        graph=''
+        f.write( 'digraph List {\nrankdir=LR;\nnode [shape = record, color=black, style=filled, fillcolor=antiquewhite1];Inicio [shape = plaintext,fillcolor=white,label= \"\"];Final [shape = plaintext,fillcolor=white,label= \"\"];\n')
+        counter = 0
+        while(aux is not None):
+            node_data += "Node" + str(counter) + "[label=\""+ 'L'+str(aux.Linea)+'C'+str(aux.Componente)+"\"];\n"
+            counter+=1
+            aux = aux.Siguiente
+        graph += node_data
+        counter=counter-1;
+        cont = 0
+        while(cont!=counter):
+            edge_data += "Node" + str(cont) + "->Node" + str(cont+1) + ";\n"
+            cont+=1
+        
 
-    def Ensablado(self):
-        pass
+        graph += edge_data
+        graph += "\n}"
+        f.write(graph)
+        f.close()
+        
+        os.system("dot -Tpng ArchivosDots/archivo"+producto+".dot -o ImagenesColas/salida"+producto+".png")
+        #os.system("/ImagenesColas/salida"+producto+".png")
+        contAr=contAr+1
+
+          
+    
+    
