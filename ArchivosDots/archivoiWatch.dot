@@ -1,0 +1,30 @@
+digraph List {
+rankdir=LR;
+node [shape = record, color=black, style=filled, fillcolor=antiquewhite1];Inicio [shape = plaintext,fillcolor=white,label= ""];Final [shape = plaintext,fillcolor=white,label= ""];
+Node0[label="L10C9"];
+Node1[label="L1C15"];
+Node2[label="L2C18"];
+Node3[label="L8C2"];
+Node4[label="L12C5"];
+Node5[label="L13C18"];
+Node6[label="L5C6"];
+Node7[label="L10C19"];
+Node8[label="L11C16"];
+Node9[label="L5C7"];
+Node10[label="L13C17"];
+Node11[label="L10C20"];
+Node12[label="L11C20"];
+Node0->Node1;
+Node1->Node2;
+Node2->Node3;
+Node3->Node4;
+Node4->Node5;
+Node5->Node6;
+Node6->Node7;
+Node7->Node8;
+Node8->Node9;
+Node9->Node10;
+Node10->Node11;
+Node11->Node12;
+
+}
