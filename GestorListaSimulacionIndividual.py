@@ -1,5 +1,5 @@
 from NodoGeneralSimularIndividual import *
-class GestorSimulacion:
+class GestorSimulacionIn:
     def __init__(self):
         self.Cabeza= None
 

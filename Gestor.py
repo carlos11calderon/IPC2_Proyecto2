@@ -24,7 +24,6 @@ class Gestor:
     Lista1 = GestorListaLineas()
     Lista2 = GestorListaProductos()
     ListaPadre = GestorSimulacion()
-    ListaSimular = GestorListaSimulacion()
     def __init__(self):
         self.cabeza=None
         TamanoListaProductosMaquina=0
@@ -159,7 +158,10 @@ class Gestor:
             print("No retorno nada de la cantidad lista de Lineas")
             return None
 
+    ## crea la lista prioridad
     def SimularProducto(self, Producto):
+        
+        ListaSimular = GestorListaSimulacion()
         contador=0
         aux = self.Lista2.cabeza
         while aux.NombreProducto != Producto:
@@ -174,68 +176,13 @@ class Gestor:
                 contador+=1
             valorline = auxiliar1.Linea
             valorCompo = auxiliar2.componente
-            self.ListaSimular.InsertarEnSimularIndividual(valorline,valorCompo)
-        self.ListaPadre.InsertarSimulacion(Producto, self.ListaSimular.Cabeza)
+            ListaSimular.InsertarEnSimularIndividual(valorline,valorCompo)
+        self.ListaPadre.InsertarSimulacion(Producto, ListaSimular.Cabeza)
+        ListaSimular.Cabeza = None
         
         
 
-    def SeMueve(self, producto,CompActual,j):
-        ExisteLinea=True
-        seMueve=True
-        aux = self.ListaPadre.cabeza
-        while aux.Nombre != producto:
-            aux = aux.siguiente
-        aux = aux.Productos
-        while aux.Linea != j:
-            if aux.Siguiente!=None:
-                aux = aux.Siguiente
-            else:
-                ExisteLinea = False
-                break
-        if ExisteLinea==True:
-            if(aux.SeMueve==True):
-                if aux.Componente+1 == CompActual:
-                    seMueve=False
-                    aux.SeMueve=  False
-                    return seMueve
-                else:
-                    seMueve=True
-                    aux.SeMueve=True
-                    return True
-            else: 
-                return False
-        else:
-            return None
-     ## individual   
-
-    def SeMueveIndi(self, producto,CompActual,j):
-        ExisteLinea=True
-        seMueve=True
-        aux = self.ListaPadre.cabeza
-        while aux.Nombre != producto:
-            aux = aux.siguiente
-        aux = aux.Productos
-        while aux.Linea != j:
-            if aux.Siguiente!=None:
-                aux = aux.Siguiente
-            else:
-                ExisteLinea = False
-                break
-        if ExisteLinea==True:
-            if(aux.SeMueve==True):
-                if aux.Componente == CompActual:
-                    seMueve=False
-                    aux.SeMueve=  False
-                    return seMueve
-                else:
-                    seMueve=True
-                    aux.SeMueve=True
-                    return True
-            else: 
-                return False
-        else:
-            return None
-
+    
 
     def ObtenerComponenteActual(self,producto,posicion):
         contador=0
@@ -246,9 +193,9 @@ class Gestor:
         while contador != posicion:
             aux = aux.Siguiente
             contador+=1
-        return aux.ActualComponente
-
-    def DeclararComponenteActual(self,producto,posicion,agregado):
+        return aux.ComponenteActual
+    
+    def ObtenerComponenteEnsamblar(self,producto,posicion):
         contador=0
         aux = self.ListaPadre.cabeza
         while aux.Nombre != producto:
@@ -257,126 +204,80 @@ class Gestor:
         while contador != posicion:
             aux = aux.Siguiente
             contador+=1
-        aux.ActualComponente =  aux.ActualComponente + agregado 
-
-    def Ensambla(self, producto,i,j,linea):
+        return aux.Componente
+    
+    def ObtenerLinea(self,producto,posicion):
         contador=0
-        ExisteLinea=True
-        ensambla = False
         aux = self.ListaPadre.cabeza
         while aux.Nombre != producto:
             aux = aux.siguiente
         aux = aux.Productos
-        while contador != j:
-            if aux.Siguiente!=None:
-                aux = aux.Siguiente
-                contador+=1
-            else:
-                ExisteLinea = False
-                break
-        if ExisteLinea==True:
-            if aux.Linea==linea:
-                if aux.Ensambla!=True:
-                    if aux.Componente == i:
-                        ensambla=True
-                        aux.Ensambla=True
-                        aux.LineaOcupada =True
-                        return ensambla
-                    elif aux.Componente<i:
-                        aux.SeMueve=True
-                        return ensambla
-                    else:
-                        return ensambla
-                else: 
-                    ensambla=True
-                    return ensambla
-        else: 
-            return None
+        while contador != posicion:
+            aux = aux.Siguiente
+            contador+=1
+        return aux.Linea
 
+    def DeclararComponenteActual(self,producto,posicion,agregado):
+        contador=0
+        Linea = self.RetornarLinea(producto,posicion)
+        aux = self.ListaPadre.cabeza
+        while aux.Nombre != producto:
+            aux = aux.siguiente
+        aux = aux.Productos
+        
+        while aux != None  :
+            if aux.Linea == Linea:
+                aux.ComponenteActual =  aux.ComponenteActual + agregado
+            aux = aux.Siguiente
 
-    def PuedeEnsamblar(self,producto,j,Linea):
+    def DeclararEnsamble(self,producto,posicion,valor):
+        contador=0
+        aux = self.ListaPadre.cabeza
+        while aux.Nombre != producto:
+            aux = aux.siguiente
+        aux = aux.Productos
+        while contador != posicion:
+            aux = aux.Siguiente
+            contador+=1
+        aux.Ensambla = valor 
+
+    def Ensambla(self,producto,posicion):
+        contador=0
+        aux = self.ListaPadre.cabeza
+        while aux.Nombre != producto:
+            aux = aux.siguiente
+        aux = aux.Productos
+        while contador != posicion:
+            aux = aux.Siguiente
+            contador+=1
+        
+        return aux.Ensambla
+
+    def PuedeEnsamblar(self,producto,posicion):
         contador = 0
         aux = self.ListaPadre.cabeza
         while aux.Nombre != producto:
             aux = aux.siguiente
         aux = aux.Productos
-        while contador != j:
+        while contador != posicion:
             aux = aux.Siguiente 
             contador+=1
-        if aux.Linea==j:
-            puedeEnsamblar=False
-            if  aux.Anterior is None or aux.Anterior.Ensamblado == True:
-                puedeEnsamblar= True
-                return puedeEnsamblar
-            else: 
-                return puedeEnsamblar
-
-    ##Extras
-    def EnsamblaExtra(self, producto,compoActual,linea):
-        
-        ExisteLinea=True
-        ensambla = False
-        aux = self.ListaPadre.cabeza
-        while aux.Nombre != producto:
-            aux = aux.siguiente
-        aux = aux.Productos
-        while aux.Linea != linea:
-            if aux.Siguiente!=None:
-                aux = aux.Siguiente
-                
-            else:
-                ExisteLinea = False
-                break
-        if ExisteLinea==True:
-            if aux.Linea==linea:
-                if aux.Ensambla!=True:
-                    if aux.Componente+1 == compoActual:
-                        ensambla=True
-                        aux.Ensambla=True
-                        aux.LineaOcupada=True
-                        return ensambla
-                    else:
-                        return ensambla
-                else: 
-                    ensambla=True
-                    return ensambla
+        if aux.Anterior is None or aux.Anterior.Ensamblado==True:
+            return True
         else: 
-            return None
+            return False
 
-    def PuedeEnsamblarExtra(self,producto,linea):
-        
-        aux = self.ListaPadre.cabeza
-        while aux.Nombre != producto:
-            aux = aux.siguiente
-        aux = aux.Productos
-        while aux.Linea != linea:
-            aux = aux.Siguiente 
-            
-        if aux.Linea==linea:
-            puedeEnsamblar=False
-            if  aux.Anterior is None or aux.Anterior.Ensamblado == True:
-                puedeEnsamblar= True
-                return puedeEnsamblar
-            else: 
-                return puedeEnsamblar
-    ##cierran extras
-
-
-    def CambiarEstadoEnsamblado(self, producto, i,Linea):
+    def CambiarEstadoEnsamblado(self, producto,posicion):
         contador=0
         aux = self.ListaPadre.cabeza
         while aux.Nombre != producto:
             aux = aux.siguiente
         aux = aux.Productos
-        while contador != i:
+        while contador != posicion:
             aux = aux.Siguiente 
             contador+=1
-        if aux.Linea==Linea:
-            aux.Ensamblado = True
-            aux.Ensambla=False
-            aux.SeMueve=False
-            aux.LineaOcupada = False
-
+        aux.Ensamblado = True
+     
     def Ensamblado(self,producto,posicion):
         contador=0
         aux = self.ListaPadre.cabeza
@@ -386,21 +287,43 @@ class Gestor:
         while contador != posicion:
             aux = aux.Siguiente
             contador+=1
-        return aux.Ensamblado 
-    
-    def LineaOcupada(self,producto,linea):
+        return aux.Ensamblado
+
+    def LineaOcupada(self,producto,posicion):
+        contador=0
         aux = self.ListaPadre.cabeza
         while aux.Nombre != producto:
             aux = aux.siguiente
         aux = aux.Productos
-        while aux.Linea != linea:
-            aux = aux.Siguiente 
-            
+        while contador != posicion:
+            aux = aux.Siguiente
+            contador+=1
+        return aux.LineaOcupada 
+    
+    def LineaOcupadaTrue(self,producto,linea):
+        aux = self.ListaPadre.cabeza
+        while aux.Nombre != producto:
+            aux = aux.siguiente
+        aux = aux.Productos
+        while aux.Siguiente != None:
+            if aux.Linea == linea:
+                aux.LineaOcupada = True
+            aux = aux.Siguiente
         if aux.Linea==linea:
-            return aux.LineaOpcupada
-            
-
-
+            aux.LineaOcupada=True
+    
+    def LineaOcupadaFalse(self,producto,linea):
+        aux = self.ListaPadre.cabeza
+        while aux.Nombre != producto:
+            aux = aux.siguiente
+        aux = aux.Productos
+        while aux.Siguiente != None:
+            if aux.Linea == linea:
+                aux.LineaOcupada = False
+            aux = aux.Siguiente
+        if aux.Linea==linea:
+            aux.LineaOcupada=False
+  
     def RetornarLinea(self,producto,posicion):
         contador=0
         aux = self.ListaPadre.cabeza
@@ -439,8 +362,6 @@ class Gestor:
         Existe=True
         if Existe==True:
             return True
-
-                    
                 
     def ultimoNodoEnsamblado(self,producto):
         contador=0
@@ -448,26 +369,19 @@ class Gestor:
         while aux.Nombre != producto:
             aux = aux.siguiente
         aux = aux.Productos
-        ultimo = self.cantidadListaLineas(producto)
-        while contador != ultimo:
-            aux = aux.Siguiente 
-            contador+=1
-        if contador==ultimo:
-                if aux.Ensamblado==True:
-                    return True
-                else: 
-                    return False
+        posicion = self.cantidadListaComponentes(producto)
+        for i in range(posicion-2):
+            aux = aux.Siguiente
+        return aux.Ensamblado
 
-    def ObtenerTiempoEnsambleLinea(self,j):
+    def ObtenerTiempoEnsambleLinea(self,Linea):
         contador = 0
         aux= self.Lista1.cabeza
-        while aux.Numero!=j:
+        while aux.Numero!=Linea:
             aux = aux.siguiente
-        if j == aux.Numero:
+        if Linea == aux.Numero:
             return aux.TiempoEnsamble
-        
-            
-
+     
     def LineasRetornar(self,producto,texto):
 
         listado2 = GestorListaProductosSimular()

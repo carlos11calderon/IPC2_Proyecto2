@@ -3,6 +3,7 @@ class ListaSimulacionIndividual:
         self.Linea = Linea
         self.Componente = Componente
         self.LineaOcupada = False
+        self.ComponenteActual = 0
         self.SeMueve = True
         self.Ensambla = False
         self.Ensamblado = False

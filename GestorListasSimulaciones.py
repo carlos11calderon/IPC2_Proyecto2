@@ -6,12 +6,11 @@ class GestorListaSimulacion:
     
     def __init__(self):
         self.Cabeza = None
-        self.last = None
 
     def InsertarEnSimularIndividual(self, Linea,Componente):
         nuevo = ListaSimulacionIndividual(int(Linea), int(Componente),None,None)
         if self.Cabeza is None:
-            self.Cabeza=self.last=nuevo
+            self.Cabeza=nuevo
         else: 
             aux = self.Cabeza
             while aux.Siguiente is not None:
