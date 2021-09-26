@@ -23,10 +23,13 @@ from GestorListaProductosSimular import *
 class Gestor:
     Lista1 = GestorListaLineas()
     Lista2 = GestorListaProductos()
+    Lista3= GestorSimulacion()
+    Lista4 = GestorListaProductosSimular()
     ListaPadre = GestorSimulacion()
     def __init__(self):
         self.cabeza=None
         TamanoListaProductosMaquina=0
+        TamanoListaProductosSimular=0
         self.cantComponentesGeneral=0 
     
     def InsertarMaquina(self, cantidad, ListaLineas, ListaProductos):
@@ -87,6 +90,7 @@ class Gestor:
 
 
     def CargarArchivoSimulacion(self):
+        contador=0
         Tk().withdraw()
         archivo = filedialog.askopenfile(initialdir="./Archivos entrada", title="Seleccione un archivo",filetypes=(("Archivos XML",".xml"),("ALL files",".txt")))
         if archivo is None:
@@ -100,8 +104,7 @@ class Gestor:
             ## Objeto de la lista de Lineas
             
             for elemento in root:
-                Lista1= GestorSimulacion()
-                Lista2 = GestorListaProductosSimular()
+                
                 if elemento.tag == "Nombre":
                     nombre = elemento.text
                 ##for para listas de produccion
@@ -109,11 +112,19 @@ class Gestor:
                     for x in elemento:
                         if x.tag == "Producto":
                             Producto = x.text
-                            Lista2.InsertarProductoLista(Producto)
-                Lista1.InsertarSimulacion(nombre,Lista2)
+                            Producto = Producto.replace("\n","")
+                            Producto = Producto.replace('\t','')
+                            self.Lista4.InsertarProductoLista(Producto)
+                            contador+=1
+                self.TamanoListaProductosSimular = contador
+                self.Lista3.InsertarSimulacion(nombre,self.Lista4)
 
     def addCombo(self, i ):
         valor = self.Lista2.AgregarCombo(i)
+        return valor
+    
+    def addCombo2(self, i ):
+        valor = self.Lista4.AgregarCombo(i)
         return valor
 
     def ComponenteMasGrande(self,producto,i):
@@ -181,7 +192,19 @@ class Gestor:
         ListaSimular.ColaImportancia(Producto)
         
         
-
+    def DeterminarValoresIniciales(self,producto):
+        aux = self.ListaPadre.cabeza
+        while aux.Nombre != producto:
+            aux = aux.siguiente
+        aux = aux.Productos
+        
+        while aux is not None:
+            aux.Ensamblado = False
+            aux.ComponenteActual=0
+            aux.Ensambla = False
+            aux.LineaOcupada = False
+            aux = aux.Siguiente
+            
     
 
     def ObtenerComponenteActual(self,producto,posicion):

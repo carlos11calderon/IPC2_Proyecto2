@@ -18,5 +18,15 @@ class GestorListaProductosSimular:
                         auxiliar.siguiente = nuevo
 
         
-                         
+        def AgregarCombo(self,i):
+                contador =0 
+                auxiliar = self.cabeza
+                while auxiliar !=None:
+                        if(i == contador):
+                                return auxiliar.Producto
+                        else: 
+                                auxiliar = auxiliar.siguiente
+                                contador+=1        
+                                
+                return None                 
                 

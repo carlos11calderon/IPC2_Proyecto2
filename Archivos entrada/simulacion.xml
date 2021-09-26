@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Simulacion>
+	<Nombre>
+		Simulacion No. 1
+	</Nombre>
+	<ListadoProductos>
+		<Producto>
+			
+			iWatch
+			
+			
+		</Producto>
+		
+		<Producto>
+			
+			Galaxy Note
+			
+			
+		</Producto>
+		
+		<Producto>
+			
+			Barbie
+			
+		</Producto>
+		
+	</ListadoProductos>
+</Simulacion>

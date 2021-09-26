@@ -1,0 +1,1121 @@
+<SalidaSimulacion>
+    <Nombre>Simulacion de Galaxy Note</Nombre>
+    <ListadoProductos>
+        <Producto>
+            <Nombre>Galaxy Note</Nombre>
+            <TiempoTotal>104</TiempoTotal>
+            <ElaboracionOptima>
+                <Tiempo NoSegundo="1">
+                    <LineaEnsamblaje>1</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="1">
+                    <LineaEnsamblaje>Se mueve a componente 1</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="1">
+                    <LineaEnsamblaje>Se mueve a componente 1</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="1">
+                    <LineaEnsamblaje>Se mueve a componente 1</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="1">
+                    <LineaEnsamblaje>Se mueve a componente 1</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="1">
+                    <LineaEnsamblaje>Se mueve a componente 1</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="1">
+                    <LineaEnsamblaje>Se mueve a componente 1</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="1">
+                    <LineaEnsamblaje>Se mueve a componente 1</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="1">
+                    <LineaEnsamblaje>Se mueve a componente 1</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="1">
+                    <LineaEnsamblaje>Se mueve a componente 1</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="2">
+                    <LineaEnsamblaje>2</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="2">
+                    <LineaEnsamblaje>Se mueve a componente 2</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="2">
+                    <LineaEnsamblaje>Se mueve a componente 2</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="2">
+                    <LineaEnsamblaje>Se mueve a componente 2</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="2">
+                    <LineaEnsamblaje>Se mueve a componente 2</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="2">
+                    <LineaEnsamblaje>Se mueve a componente 2</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="2">
+                    <LineaEnsamblaje>Se mueve a componente 2</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="2">
+                    <LineaEnsamblaje>Se mueve a componente 2</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="2">
+                    <LineaEnsamblaje>Se mueve a componente 2</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="2">
+                    <LineaEnsamblaje>Se mueve a componente 2</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="3">
+                    <LineaEnsamblaje>3</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="3">
+                    <LineaEnsamblaje>Se mueve a componente 3</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="3">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="3">
+                    <LineaEnsamblaje>Se mueve a componente 3</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="3">
+                    <LineaEnsamblaje>Se mueve a componente 3</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="3">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="3">
+                    <LineaEnsamblaje>Se mueve a componente 3</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="3">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="3">
+                    <LineaEnsamblaje>Se mueve a componente 3</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="3">
+                    <LineaEnsamblaje>Se mueve a componente 3</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="4">
+                    <LineaEnsamblaje>4</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="4">
+                    <LineaEnsamblaje>Se mueve a componente 4</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="4">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="4">
+                    <LineaEnsamblaje>Se mueve a componente 4</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="4">
+                    <LineaEnsamblaje>Se mueve a componente 4</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="4">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="4">
+                    <LineaEnsamblaje>Se mueve a componente 4</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="4">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="4">
+                    <LineaEnsamblaje>Se mueve a componente 4</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="4">
+                    <LineaEnsamblaje>Se mueve a componente 4</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="5">
+                    <LineaEnsamblaje>5</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="5">
+                    <LineaEnsamblaje>Se mueve a componente 5</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="5">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="5">
+                    <LineaEnsamblaje>Se mueve a componente 5</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="5">
+                    <LineaEnsamblaje>Se mueve a componente 5</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="5">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="5">
+                    <LineaEnsamblaje>Se mueve a componente 5</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="5">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="5">
+                    <LineaEnsamblaje>Se mueve a componente 5</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="5">
+                    <LineaEnsamblaje>Se mueve a componente 5</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="6">
+                    <LineaEnsamblaje>6</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="6">
+                    <LineaEnsamblaje>Se mueve a componente 6</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="6">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="6">
+                    <LineaEnsamblaje>Se mueve a componente 6</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="6">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="6">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="6">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="6">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="6">
+                    <LineaEnsamblaje>Se mueve a componente 6</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="6">
+                    <LineaEnsamblaje>Se mueve a componente 6</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="7">
+                    <LineaEnsamblaje>7</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="7">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="7">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="7">
+                    <LineaEnsamblaje>Se mueve a componente 7</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="7">
+                    <LineaEnsamblaje>Se mueve a componente 7</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="7">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="7">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="7">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="7">
+                    <LineaEnsamblaje>Se mueve a componente 7</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="7">
+                    <LineaEnsamblaje>Se mueve a componente 7</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="17">
+                    <LineaEnsamblaje>17</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="17">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="17">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="17">
+                    <LineaEnsamblaje>Ensamblando Componente 7</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="17">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="17">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="17">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="17">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="17">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="17">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="23">
+                    <LineaEnsamblaje>23</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="23">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="23">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="23">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="23">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="23">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="23">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="23">
+                    <LineaEnsamblaje>Ensamblando Componente 2</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="23">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="23">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="24">
+                    <LineaEnsamblaje>24</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="24">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="24">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="24">
+                    <LineaEnsamblaje>Se mueve a componente 8</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="24">
+                    <LineaEnsamblaje>Se mueve a componente 8</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="24">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="24">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="24">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="24">
+                    <LineaEnsamblaje>Se mueve a componente 8</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="24">
+                    <LineaEnsamblaje>Se mueve a componente 8</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="25">
+                    <LineaEnsamblaje>25</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="25">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="25">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="25">
+                    <LineaEnsamblaje>Se mueve a componente 9</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="25">
+                    <LineaEnsamblaje>Se mueve a componente 9</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="25">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="25">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="25">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="25">
+                    <LineaEnsamblaje>Se mueve a componente 9</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="25">
+                    <LineaEnsamblaje>Se mueve a componente 9</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="26">
+                    <LineaEnsamblaje>26</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="26">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="26">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="26">
+                    <LineaEnsamblaje>Se mueve a componente 10</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="26">
+                    <LineaEnsamblaje>Se mueve a componente 10</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="26">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="26">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="26">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="26">
+                    <LineaEnsamblaje>Se mueve a componente 10</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="26">
+                    <LineaEnsamblaje>Se mueve a componente 10</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="27">
+                    <LineaEnsamblaje>27</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="27">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="27">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="27">
+                    <LineaEnsamblaje>Se mueve a componente 11</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="27">
+                    <LineaEnsamblaje>Se mueve a componente 11</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="27">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="27">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="27">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="27">
+                    <LineaEnsamblaje>Se mueve a componente 11</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="27">
+                    <LineaEnsamblaje>Se mueve a componente 11</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="28">
+                    <LineaEnsamblaje>28</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="28">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="28">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="28">
+                    <LineaEnsamblaje>Se mueve a componente 12</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="28">
+                    <LineaEnsamblaje>Se mueve a componente 12</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="28">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="28">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="28">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="28">
+                    <LineaEnsamblaje>Se mueve a componente 12</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="28">
+                    <LineaEnsamblaje>Se mueve a componente 12</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="29">
+                    <LineaEnsamblaje>29</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="29">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="29">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="29">
+                    <LineaEnsamblaje>Se mueve a componente 13</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="29">
+                    <LineaEnsamblaje>Se mueve a componente 13</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="29">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="29">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="29">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="29">
+                    <LineaEnsamblaje>Se mueve a componente 13</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="29">
+                    <LineaEnsamblaje>Se mueve a componente 13</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="30">
+                    <LineaEnsamblaje>30</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="30">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="30">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="30">
+                    <LineaEnsamblaje>Se mueve a componente 14</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="30">
+                    <LineaEnsamblaje>Se mueve a componente 14</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="30">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="30">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="30">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="30">
+                    <LineaEnsamblaje>Se mueve a componente 14</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="30">
+                    <LineaEnsamblaje>Se mueve a componente 14</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="36">
+                    <LineaEnsamblaje>36</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="36">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="36">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="36">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="36">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="36">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="36">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="36">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="36">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="36">
+                    <LineaEnsamblaje>Ensamblando Componente 14</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="37">
+                    <LineaEnsamblaje>37</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="37">
+                    <LineaEnsamblaje>Ensamblando Componente 6</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="37">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="37">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="37">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="37">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="37">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="37">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="37">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="37">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="47">
+                    <LineaEnsamblaje>47</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="47">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="47">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="47">
+                    <LineaEnsamblaje>Ensamblando Componente 14</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="47">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="47">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="47">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="47">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="47">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="47">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="48">
+                    <LineaEnsamblaje>48</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="48">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="48">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="48">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="48">
+                    <LineaEnsamblaje>Se mueve a componente 15</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="48">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="48">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="48">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="48">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="48">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="49">
+                    <LineaEnsamblaje>49</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="49">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="49">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="49">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="49">
+                    <LineaEnsamblaje>Ensamblando Componente 15</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="49">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="49">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="49">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="49">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="49">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="57">
+                    <LineaEnsamblaje>57</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="57">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="57">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="57">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="57">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="57">
+                    <LineaEnsamblaje>Ensamblando Componente 2</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="57">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="57">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="57">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="57">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="62">
+                    <LineaEnsamblaje>62</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="62">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="62">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="62">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="62">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="62">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="62">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="62">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="62">
+                    <LineaEnsamblaje>Ensamblando Componente 14</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="62">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="71">
+                    <LineaEnsamblaje>71</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="71">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="71">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="71">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="71">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="71">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="71">
+                    <LineaEnsamblaje>Ensamblando Componente 5</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="71">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="71">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="71">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="72">
+                    <LineaEnsamblaje>72</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="72">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="72">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="72">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="72">
+                    <LineaEnsamblaje>Se mueve a componente 14</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="72">
+                    <LineaEnsamblaje>Se mueve a componente 3</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="72">
+                    <LineaEnsamblaje>Se mueve a componente 6</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="72">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="72">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="72">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="73">
+                    <LineaEnsamblaje>73</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="73">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="73">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="73">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="73">
+                    <LineaEnsamblaje>Se mueve a componente 13</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="73">
+                    <LineaEnsamblaje>Se mueve a componente 4</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="73">
+                    <LineaEnsamblaje>Se mueve a componente 7</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="73">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="73">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="73">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="74">
+                    <LineaEnsamblaje>74</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="74">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="74">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="74">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="74">
+                    <LineaEnsamblaje>Se mueve a componente 12</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="74">
+                    <LineaEnsamblaje>Se mueve a componente 5</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="74">
+                    <LineaEnsamblaje>Se mueve a componente 8</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="74">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="74">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="74">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="75">
+                    <LineaEnsamblaje>75</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="75">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="75">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="75">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="75">
+                    <LineaEnsamblaje>Se mueve a componente 11</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="75">
+                    <LineaEnsamblaje>Se mueve a componente 6</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="75">
+                    <LineaEnsamblaje>Se mueve a componente 9</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="75">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="75">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="75">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="83">
+                    <LineaEnsamblaje>83</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="83">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="83">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="83">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="83">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="83">
+                    <LineaEnsamblaje>Ensamblando Componente 6</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="83">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="83">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="83">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="83">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="84">
+                    <LineaEnsamblaje>84</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="84">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="84">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="84">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="84">
+                    <LineaEnsamblaje>Se mueve a componente 10</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="84">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="84">
+                    <LineaEnsamblaje>Se mueve a componente 10</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="84">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="84">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="84">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="85">
+                    <LineaEnsamblaje>85</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="85">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="85">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="85">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="85">
+                    <LineaEnsamblaje>Se mueve a componente 9</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="85">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="85">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="85">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="85">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="85">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="86">
+                    <LineaEnsamblaje>86</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="86">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="86">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="86">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="86">
+                    <LineaEnsamblaje>Se mueve a componente 8</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="86">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="86">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="86">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="86">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="86">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="87">
+                    <LineaEnsamblaje>87</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="87">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="87">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="87">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="87">
+                    <LineaEnsamblaje>Se mueve a componente 7</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="87">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="87">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="87">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="87">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="87">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="88">
+                    <LineaEnsamblaje>88</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="88">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="88">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="88">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="88">
+                    <LineaEnsamblaje>Se mueve a componente 6</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="88">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="88">
+                    <LineaEnsamblaje>No hace nada </LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="88">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="88">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="88">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="89">
+                    <LineaEnsamblaje>89</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="89">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="89">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="89">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="89">
+                    <LineaEnsamblaje>Ensamblando Componente 6</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="89">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="89">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="89">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="89">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="89">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="98">
+                    <LineaEnsamblaje>98</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="98">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="98">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="98">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="98">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="98">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="98">
+                    <LineaEnsamblaje>Ensamblando Componente 10</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="98">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="98">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="98">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="104">
+                    <LineaEnsamblaje>104</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="104">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="104">
+                    <LineaEnsamblaje>Ensamblando Componente 2</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="104">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="104">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="104">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="104">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="104">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="104">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+                <Tiempo NoSegundo="104">
+                    <LineaEnsamblaje>No hace nada</LineaEnsamblaje>
+                </Tiempo>
+            </ElaboracionOptima>
+        </Producto>
+    </ListadoProductos>
+</SalidaSimulacion>
