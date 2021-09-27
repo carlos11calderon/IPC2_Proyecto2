@@ -189,7 +189,7 @@ class Gestor:
             valorCompo = auxiliar2.componente
             ListaSimular.InsertarEnSimularIndividual(valorline,valorCompo)
         self.ListaPadre.InsertarSimulacion(Producto, ListaSimular.Cabeza)
-        ListaSimular.ColaImportancia(Producto)
+        ListaSimular.ColaImportancia(Producto)  
         
         
     def DeterminarValoresIniciales(self,producto):
@@ -204,8 +204,6 @@ class Gestor:
             aux.Ensambla = False
             aux.LineaOcupada = False
             aux = aux.Siguiente
-            
-    
 
     def ObtenerComponenteActual(self,producto,posicion):
         contador=0

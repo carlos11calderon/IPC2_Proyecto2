@@ -41,7 +41,7 @@ class Ui_Ensamblador(object):
         self.tab = QtWidgets.QWidget()
         self.tab.setObjectName("tab")
         self.lblProductos = QtWidgets.QLabel(self.tab)
-        self.lblProductos.setGeometry(QtCore.QRect(30, 40, 101, 51))
+        self.lblProductos.setGeometry(QtCore.QRect(20, 38, 101, 51))
         font = QtGui.QFont()
         font.setFamily("Bodoni MT")
         font.setPointSize(16)
@@ -52,7 +52,7 @@ class Ui_Ensamblador(object):
         self.comboProductos.setObjectName("comboProductos")
         self.comboProductos.currentTextChanged.connect(self.Actualizar)
         self.tableLineas = QtWidgets.QTableWidget(self.tab)
-        self.tableLineas.setGeometry(QtCore.QRect(370, 80, 781, 421))
+        self.tableLineas.setGeometry(QtCore.QRect(360, 80, 761, 421))
         self.tableLineas.setObjectName("tableView")
         self.tableLineas.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.tableLineas.setDragDropOverwriteMode(False)
@@ -68,7 +68,7 @@ class Ui_Ensamblador(object):
         self.lblTabla = QtWidgets.QLabel(self.tab)
         self.lblTabla.setGeometry(QtCore.QRect(660, 20, 201, 41))
         self.btnSimular = QtWidgets.QPushButton(self.tab)
-        self.btnSimular.setGeometry(QtCore.QRect(400,20,121,51))
+        self.btnSimular.setGeometry(QtCore.QRect(358,20,117,51))
         self.btnSimular.setObjectName("Simular")
         self.btnSimular.clicked.connect(self.Simular1)
         self.btnReporteHTML = QtWidgets.QPushButton(self.tab)
@@ -254,7 +254,7 @@ class Ui_Ensamblador(object):
         self.actionCargar_Maquina.setText(_translate("Ensamblador", "Cargar Maquina"))
         self.actionCargar_Simulacion.setText(_translate("Ensamblador", "Cargar Simulacion"))
         self.btnSimular.setText(_translate("Ensamblador", "Simular"))
-        self.btnReporteHTML.setText(_translate("Ensamblador", "Reporte Html"))
+        self.btnReporteHTML.setText(_translate("Ensamblador", "Reportes"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("Ensamblador", "Individual"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("Ensamblador", "Masiva"))
         self.lblProductos_2.setText(_translate("Ensamblador", "Productos a ver:"))
@@ -262,7 +262,7 @@ class Ui_Ensamblador(object):
         self.lblTabla_2.setText(_translate("Ensamblador", "Tabla de Simulación"))
         self.lblTiempoEnsamble_2.setText(_translate("Ensamblador", "Tiempo óptimo de ensamblaje: "))
         self.pushButton.setText(_translate("Ensamblador", "Generar Reportes"))
-        self.pushButton_2.setText(_translate("Ensamblador", "Salida Masiva"))
+        self.pushButton_2.setText(_translate("Ensamblador", "Salida XML"))
 
     def Actualizar(self):
         global contadorActualizar
@@ -445,7 +445,7 @@ class Ui_Ensamblador(object):
                 '<body>\n'
                 '<div class="container-fluid welcome-page" id="home">\n'
                 '   <div class="jumbotron">\n'
-                '       <h1>\n <span>Tabla de Ensamble de'+producto+'\n</span>\n </h1>\n<p>Tiempo Optimo del Ensamble de '+producto+': '+str(tiempoOptimo)+'</p>\n'
+                '       <h1>\n <span>Tabla de Ensamble de '+producto+'\n</span>\n </h1>\n<p>Tiempo Optimo del Ensamble de '+producto+': '+str(tiempoOptimo)+'</p>\n'
                 '</div>\n'
                 '</div>\n'
                 '<div class="container-fluid " ><div class="jumbotron">'
@@ -468,7 +468,8 @@ class Ui_Ensamblador(object):
         fileHtml.write(contenidoHTML)
         fileHtml.close()
         webbrowser.open("file:///"+os.getcwd()+"/HTML/Individual/"+producto+".html")
-        self.SalidaXMLIndividual()    
+        self.SalidaXMLIndividual()
+            
     
     def SalidaXMLIndividual(self):
         productoCombo =self.comboProductos.currentText()
@@ -494,6 +495,8 @@ class Ui_Ensamblador(object):
         archivo = ET.ElementTree(top)
         archivo.write(ruta+''+productoCombo+".xml")         
 
+    def ReporteCola(self):
+        gestor.Cola(self.comboProductos.currentText())
 ## Seccion masiva
 
     def addComboMasivo(self):
